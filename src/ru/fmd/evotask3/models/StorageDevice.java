@@ -3,8 +3,8 @@ package ru.fmd.evotask3.models;
 public abstract class StorageDevice extends Hardware {
     private final float capacity;
 
-    protected StorageDevice(String model, float capacity) {
-        super(model);
+    protected StorageDevice(String model, float power, float capacity) {
+        super(model, power);
         this.capacity = capacity;
     }
 

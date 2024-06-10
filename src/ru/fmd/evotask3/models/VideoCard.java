@@ -7,8 +7,8 @@ public class VideoCard extends Hardware implements IPCIE {
     private final float frequency;
     private final float memoryFrequency;
 
-    public VideoCard(String model, float capacity, float frequency, float memoryFrequency) {
-        super(model);
+    public VideoCard(String model, float power, float capacity, float frequency, float memoryFrequency) {
+        super(model, power);
         this.capacity = capacity;
         this.frequency = frequency;
         this.memoryFrequency = memoryFrequency;

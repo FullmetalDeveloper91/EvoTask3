@@ -9,8 +9,8 @@ public class RAM extends Hardware {
     private final int rp;
     private final int ras;
 
-    public RAM(String model,  RamType ramType, float memorySize, float frequency, int cl, int rcd, int rp, int ras) {
-        super(model);
+    public RAM(String model, float power,  RamType ramType, float memorySize, float frequency, int cl, int rcd, int rp, int ras) {
+        super(model, power);
         this.ramType = ramType;
         this.memorySize = memorySize;
         this.frequency = frequency;

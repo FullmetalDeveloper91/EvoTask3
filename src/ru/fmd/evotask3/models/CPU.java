@@ -8,7 +8,8 @@ public class CPU extends Hardware {
     private final boolean hyperThreading;
     private final boolean integratedGraphics;
 
-    public CPU(SocketType socket, float frequency, float cashSize, int coreCount, boolean hyperThreading, boolean integratedGraphics) {
+    public CPU(String model, float power, SocketType socket, float frequency, float cashSize, int coreCount, boolean hyperThreading, boolean integratedGraphics) {
+        super(model, power);
         this.socket = socket;
         this.frequency = frequency;
         this.cashSize = cashSize;
